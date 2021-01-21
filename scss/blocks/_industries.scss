@@ -1,0 +1,131 @@
+.industries {
+	background: $main-bg-color;
+	position: relative;
+
+	&-wrapper {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-gap: 30px;
+		width: 100%;
+
+		@media screen and (max-width: $phablet-size) {
+			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		}
+	}
+
+	&-block {
+		display: block;
+		cursor: pointer;
+		overflow: hidden;
+		position: relative;
+
+		&:hover {
+			.industries-block__image {
+				transform: scale(1.05);
+			}
+
+			.industries-block__inner {
+				top: 170px;
+			}
+		}
+
+		&__image {
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			min-height: 400px;
+			overflow: hidden;
+			transition: all 0.3s linear;
+			width: 100%;
+
+			&::after {
+				background: rgba($black, 0.4);
+				bottom: 0;
+				content: "";
+				left: 0;
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+		}
+
+		&__inner {
+			display: flex;
+			flex-direction: column;
+			left: 50%;
+			max-height: 200px;
+			padding: 30px 50px;
+			position: absolute;
+			text-align: center;
+			top: 320px;
+			transform: translateX(-50%);
+			transition: all 0.3s linear;
+			width: 100%;
+			z-index: 2;
+
+			@media screen and (max-width: $tablet-size) {
+				padding: 30px;
+			}
+
+			& > * {
+				margin: 10px auto;
+
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+
+	&-box {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		cursor: pointer;
+		min-height: 540px;
+		overflow: hidden;
+		position: relative;
+		transition: all 0.3s linear;
+
+		&:hover {
+			transform: scale(1.05);
+
+			.industries-box__inner {
+				top: 280px;
+			}
+		}
+
+		&::after {
+			background: rgba($black, 0.4);
+			bottom: 0;
+			content: "";
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+		&__inner {
+			display: flex;
+			flex-direction: column;
+			left: 50%;
+			max-height: 200px;
+			padding: 30px 50px;
+			position: absolute;
+			text-align: center;
+			top: 460px;
+			transform: translateX(-50%);
+			transition: all 0.3s linear;
+			width: 100%;
+			z-index: 1;
+
+			& > * {
+				margin: 10px auto;
+
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}

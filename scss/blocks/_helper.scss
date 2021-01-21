@@ -1,0 +1,233 @@
+.bg-light {
+	background: $light-bg-color;
+}
+
+.bg-dark {
+	background: $dark-bg-color;
+}
+
+.bg-white {
+	background: $main-bg-color;
+}
+
+.border-bottom {
+	border-bottom: 1px solid rgba($black, 0.1);
+}
+
+.border-top {
+	border-top: 1px solid rgba($white, 0.1);
+}
+
+.padding-top {
+	padding-top: 0;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	position: relative;
+
+	&-left {
+		justify-content: inherit;
+		padding: 0;
+	}
+}
+
+.hover-white {
+	color: $white;
+
+	&:hover {
+		background-color: transparent;
+		border-color: $btn-border-light;
+	}
+}
+
+.hover-black {
+	color: $white;
+
+	&:hover {
+		background-color: transparent;
+		border-color: $btn-border-dark;
+		color: $black;
+	}
+}
+
+.btn {
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.2;
+	transition: all 0.3s linear;
+
+	&-yellow {
+		background: $main-color;
+		border: 2px solid $main-color;
+		letter-spacing: 2px;
+		padding: 15px 45px;
+		text-transform: uppercase;
+	}
+
+	&-thin {
+		background: $main-color;
+		border: 2px solid $main-color;
+		color: $white;
+		letter-spacing: 2px;
+		padding: 10px 45px;
+		text-transform: uppercase;
+		width: 100%;
+
+		&:hover {
+			background-color: transparent;
+			border-color: $btn-border-dark;
+			color: $black;
+		}
+	}
+
+	&-text {
+		background-color: transparent;
+		color: $main-color;
+	}
+
+	&-small {
+		background: $main-color;
+		border: 2px solid $main-color;
+		color: $white;
+		height: 45px;
+		padding: 10px;
+		text-transform: uppercase;
+		width: 70px;
+	}
+}
+
+.title {
+	display: block;
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 1.2;
+
+	&-uppercase {
+		color: $white;
+		letter-spacing: 2px;
+		margin: 25px auto;
+		text-transform: uppercase;
+	}
+
+	&-black {
+		color: $base-text-color;
+		margin-bottom: 10px;
+	}
+
+	&-white {
+		color: $white;
+		font-size: 24px;
+	}
+
+	&-yellow {
+		color: $main-color;
+		margin-bottom: 10px;
+	}
+}
+
+.text {
+	font-weight: 200;
+	margin-bottom: 20px;
+	position: relative;
+
+	&-gray {
+		color: rgba($white, 0.5);
+		font-size: 18px;
+		line-height: 1.5;
+	}
+
+	&-white {
+		color: $white;
+		font-size: 18px;
+		line-height: 1.5;
+	}
+
+	&-black {
+		color: $base-text-color;
+		font-size: 18px;
+		line-height: 1.5;
+	}
+
+	&-italic {
+		color: $base-text-color;
+		font-size: 16px;
+		font-style: italic;
+		line-height: 1.5;
+	}
+}
+
+.breadcrumbs {
+	display: block;
+	margin: 0 auto 20px;
+
+	&-link {
+		color: rgba($white, 0.5);
+		font-size: 16px;
+		font-weight: 300;
+		letter-spacing: 1px;
+
+		&.active {
+			color: $main-color;
+			cursor: pointer;
+			transition: all 0.3s linear;
+
+			&:hover {
+				color: $link-color-hover;
+			}
+		}
+	}
+
+	&-icon {
+		&__next {
+			@include size(10px);
+			fill: rgba($white, 0.5);
+			margin: 0 5px;
+		}
+	}
+}
+
+.pagination {
+	display: flex;
+	margin-top: 80px;
+	position: relative;
+
+	&-list {
+		display: flex;
+		margin: 0 auto;
+
+		& > * {
+			margin-right: 5px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	&-item {
+		@include size(40px);
+		align-items: center;
+		background: $main-color;
+		border-radius: 50%;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		transition: all 0.3s linear;
+
+		&:hover {
+			background: $icon-bg-color;
+		}
+
+		&.active {
+			background: $icon-bg-color;
+		}
+	}
+
+	&-link {
+		color: $white;
+	}
+}

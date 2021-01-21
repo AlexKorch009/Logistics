@@ -1,0 +1,172 @@
+.footer {
+	position: relative;
+
+	&-wrapper {
+		display: flex;
+		flex-direction: column;
+
+		& > * {
+			margin: 30px 0;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		@media screen and (max-width: $content-size) {
+			padding: 0 10px;
+		}
+	}
+
+	&-items {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-gap: 40px 20px;
+		height: auto;
+		position: relative;
+		width: 100%;
+	}
+
+	&-item {
+		display: flex;
+		flex-direction: column;
+
+		& > * {
+			margin: 10px 0;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		&__title {
+			color: $white;
+			font-weight: 300;
+			letter-spacing: 1px;
+		}
+	}
+
+	&-list {
+		display: flex;
+		flex-direction: column;
+
+		& > * {
+			margin: 5px 0;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&-link {
+		color: rgba($white, 0.5);
+		cursor: pointer;
+		letter-spacing: 1px;
+		transition: all 0.3s linear;
+
+		&:hover {
+			color: rgba($white, 1);
+		}
+	}
+
+	&-social {
+		display: flex;
+
+		& > * {
+			margin-right: 35px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	&-icon {
+		position: relative;
+
+		&__small {
+			@include size(16px);
+			cursor: pointer;
+			fill: rgba($white, 0.5);
+			transition: all 0.3s linear;
+
+			&:hover {
+				fill: rgba($white, 1);
+			}
+		}
+	}
+
+	&-group {
+		display: flex;
+		position: relative;
+	}
+
+	&-input {
+		background-color: transparent;
+		border: 2px solid rgba(255, 255, 255, 0.5);
+		border-right: 0;
+		color: $white;
+		height: 45px;
+		padding: 5px 10px;
+		text-overflow: ellipsis;
+		width: 100%;
+
+		&::placeholder {
+			color: rgba($label-text-color, 0.5);
+			font-size: 14px;
+			font-style: italic;
+			letter-spacing: 1px;
+		}
+	}
+}
+
+.copyright {
+	&-text {
+		color: rgba($white, 0.5);
+		display: block;
+		font-weight: 300;
+		letter-spacing: 1px;
+		line-height: 1.5;
+		margin: 50px auto;
+		text-align: center;
+
+		span {
+			color: rgba($white, 0.5);
+			cursor: pointer;
+			transition: all 0.3s linear;
+
+			&:hover {
+				color: rgba($white, 1);
+			}
+		}
+	}
+
+	&-icon {
+		position: relative;
+
+		&__heart {
+			@include size(16px);
+			cursor: pointer;
+			fill: rgba($white, 0.5);
+			transition: all 0.3s linear;
+
+			&:hover {
+				fill: rgba($white, 1);
+				transform: scale(1.1);
+			}
+		}
+	}
+}

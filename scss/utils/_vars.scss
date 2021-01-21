@@ -1,0 +1,71 @@
+/*Colors*/
+/*base color*/
+$white: #fff;
+$black: #000;
+/*main color*/
+$main-color: #f89d13;
+/*icon color*/
+$social-icon-color: #999999;
+$social-icon-hover: #fff;
+$icon-bg-color: #777;
+$icon-bg-hover: #000;
+$icon-color: #fff;
+$icon-dark-color: #000;
+/*text color*/
+$base-text-color: #4d4d4d;
+$text-white: #fff;
+$text-black: #000;
+/*bg color*/
+$main-bg-color: #fff;
+$light-bg-color: #f8f8f8;
+$dark-bg-color: #343a40;
+/*btn color*/
+$btn-border-dark: #000;
+$btn-border-light: #fff;
+/*link color*/
+$link-color-hover: #b97205;
+$link-color-visited: #b97205;
+/*footer color*/
+$footer-dark-bg:#333;
+/*input color*/
+$input-border-color: #ced4da;
+$input-bg-active: #e8f0fe;
+$label-text-color: #fff;
+
+/*Sizes*/
+$base-font-size: 16px;
+
+/*Breakpoints*/
+$breakpoints: (
+	"desktop-wide": 1440px,
+	"desktop" : 1248px,
+	"tablet-wide" : 1024px,
+	"tablet" : 768px,
+	"tablet-small": 640px,
+	"phablet" : 560px,
+	"phone-wide" : 480px,
+	"phone" : 400px
+);
+
+/*Content*/
+$notebook-size:1367px;
+$desktop-size: 1201px;
+$content-size: 1141px;
+$tablet-size: 1025px;
+$phablet-size: 991px;
+$phone-size: 769px;
+$mobile-size: 481px;
+
+// @media screen and (max-width: $notebook-size) {}
+
+// @media screen and (max-width: $desktop-size) {}
+	
+// @media screen and (max-width: $content-size) {}
+	
+// @media screen and (max-width: $tablet-size) {}
+
+// @media screen and (max-width: $phablet-size) {}
+	
+// @media screen and (max-width: $phone-size) {}
+	
+// @media screen and (max-width: $mobile-size) {}

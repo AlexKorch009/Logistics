@@ -1,0 +1,36 @@
+.header {
+	background-color: transparent;
+	display: flex;
+	height: auto;
+	padding: 15px 0;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+
+	&-inner {
+		align-items: center;
+		display: flex;
+		height: auto;
+		justify-content: space-between;
+		position: relative;
+		width: 100%;
+	}
+}
+
+.logo {
+	display: block;
+	position: relative;
+
+	&-text {
+		color: $text-white;
+		font-size: 32px;
+		font-weight: 500;
+		letter-spacing: 2px;
+		line-height: 1.2;
+
+		span {
+			color: $main-color;
+			font-weight: 700;
+		}
+	}
+}

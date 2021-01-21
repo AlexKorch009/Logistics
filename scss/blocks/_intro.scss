@@ -1,0 +1,60 @@
+.intro {
+	align-items: center;
+	background-attachment: fixed;
+	background-image: url(../../images/intro-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	height: calc(100vh);
+	min-height: 600px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+
+	@media screen and (max-width: $phablet-size) {
+		height: calc(80vh);
+	}
+
+	@media screen and (max-width: $phone-size) {
+		height: calc(60vh);
+	}
+
+	&::before {
+		background: rgba($black, 0.4);
+		bottom: 0;
+		content: "";
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	&-small {
+		height: auto;
+	}
+
+	&-inner {
+		position: relative;
+	}
+
+	&-title {
+		color: $white;
+		display: block;
+		font-size: 4.5vw;
+		font-weight: 700;
+		line-height: 1.2;
+		letter-spacing: 2px;
+		padding: 20px;
+		position: relative;
+		text-transform: uppercase;
+
+		@media screen and (max-width: $tablet-size) {
+			font-size: 6vw;
+		}
+
+		@media screen and (max-width: $mobile-size) {
+			font-size: 10vw;
+		}
+	}
+}
