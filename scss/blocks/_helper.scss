@@ -36,7 +36,6 @@
 
 .hover-white {
 	color: $white;
-
 	&:hover {
 		background-color: transparent;
 		border-color: $btn-border-light;
@@ -45,7 +44,6 @@
 
 .hover-black {
 	color: $white;
-
 	&:hover {
 		background-color: transparent;
 		border-color: $btn-border-dark;
@@ -76,7 +74,6 @@
 		padding: 10px 45px;
 		text-transform: uppercase;
 		width: 100%;
-
 		&:hover {
 			background-color: transparent;
 			border-color: $btn-border-dark;
@@ -174,7 +171,6 @@
 			color: $main-color;
 			cursor: pointer;
 			transition: all 0.3s linear;
-
 			&:hover {
 				color: $link-color-hover;
 			}
@@ -198,10 +194,8 @@
 	&-list {
 		display: flex;
 		margin: 0 auto;
-
 		& > * {
 			margin-right: 5px;
-
 			&:last-child {
 				margin-right: 0;
 			}
@@ -217,7 +211,6 @@
 		display: flex;
 		justify-content: center;
 		transition: all 0.3s linear;
-
 		&:hover {
 			background: $icon-bg-color;
 		}

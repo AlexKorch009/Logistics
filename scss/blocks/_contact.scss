@@ -4,7 +4,6 @@
 		grid-template-columns: auto 460px;
 		grid-gap: 30px;
 		width: 100%;
-
 		@media screen and (max-width: $content-size) {
 			grid-template-columns: auto;
 			grid-gap: 20px;
@@ -14,14 +13,11 @@
 	&-block {
 		display: block;
 		position: relative;
-
 		& > * {
 			margin: 20px 0;
-
 			&:first-child {
 				margin-top: 0;
 			}
-
 			&:last-child {
 				margin-bottom: 0;
 			}
@@ -32,19 +28,15 @@
 		display: flex;
 		flex-direction: column;
 		padding: 50px;
-
 		& > * {
 			margin: 10px 0;
-
 			&:first-child {
 				margin-top: 0;
 			}
-
 			&:last-child {
 				margin-bottom: 0;
 			}
 		}
-
 		@media screen and (max-width: $mobile-size) {
 			padding: 10px;
 		}
@@ -55,7 +47,6 @@
 		grid-template-columns: auto auto;
 		grid-gap: 30px;
 		width: 100%;
-
 		@media screen and (max-width: $phone-size) {
 			grid-template-columns: auto;
 		}
@@ -65,14 +56,11 @@
 	&-input {
 		display: flex;
 		flex-direction: column;
-
 		& > * {
 			margin: 5px 0;
-
 			&:first-child {
 				margin-top: 0;
 			}
-
 			&:last-child {
 				margin-bottom: 0;
 			}
@@ -89,11 +77,9 @@
 			padding: 10px;
 			transition: all 0.3s linear;
 			width: 100%;
-
 			&:focus {
 				border-color: $main-color;
 			}
-
 			&:checked {
 				background-color: $input-bg-active;
 			}
@@ -108,19 +94,15 @@
 
 	&-item {
 		padding: 25px;
-
 		& > * {
 			margin: 20px 0;
-
 			&:first-child {
 				margin-top: 0;
 			}
-
 			&:last-child {
 				margin-bottom: 0;
 			}
 		}
-
 		@media screen and (max-width: $mobile-size) {
 			padding: 20px;
 		}
@@ -129,14 +111,11 @@
 	&-info {
 		display: flex;
 		flex-direction: column;
-
 		& > * {
 			margin: 5px 0;
-
 			&:first-child {
 				margin-top: 0;
 			}
-
 			&:last-child {
 				margin-bottom: 0;
 			}
@@ -152,7 +131,6 @@
 		font-size: 16px;
 		font-weight: 300;
 		transition: all 0.3s linear;
-
 		&:hover {
 			color: $link-color-hover;
 		}

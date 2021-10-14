@@ -4,19 +4,15 @@
 	&-wrapper {
 		display: flex;
 		flex-direction: column;
-
 		& > * {
 			margin: 30px 0;
-
 			&:first-child {
 				margin-top: 0;
 			}
-
 			&:last-child {
 				margin-bottom: 0;
 			}
 		}
-
 		@media screen and (max-width: $content-size) {
 			padding: 0 10px;
 		}
@@ -34,14 +30,11 @@
 	&-item {
 		display: flex;
 		flex-direction: column;
-
 		& > * {
 			margin: 10px 0;
-
 			&:first-child {
 				margin-top: 0;
 			}
-
 			&:last-child {
 				margin-bottom: 0;
 			}
@@ -57,14 +50,11 @@
 	&-list {
 		display: flex;
 		flex-direction: column;
-
 		& > * {
 			margin: 5px 0;
-
 			&:first-child {
 				margin-top: 0;
 			}
-
 			&:last-child {
 				margin-bottom: 0;
 			}
@@ -76,7 +66,6 @@
 		cursor: pointer;
 		letter-spacing: 1px;
 		transition: all 0.3s linear;
-
 		&:hover {
 			color: rgba($white, 1);
 		}
@@ -84,10 +73,8 @@
 
 	&-social {
 		display: flex;
-
 		& > * {
 			margin-right: 35px;
-
 			&:last-child {
 				margin-right: 0;
 			}
@@ -102,7 +89,6 @@
 			cursor: pointer;
 			fill: rgba($white, 0.5);
 			transition: all 0.3s linear;
-
 			&:hover {
 				fill: rgba($white, 1);
 			}
@@ -123,7 +109,6 @@
 		padding: 5px 10px;
 		text-overflow: ellipsis;
 		width: 100%;
-
 		&::placeholder {
 			color: rgba($label-text-color, 0.5);
 			font-size: 14px;
@@ -147,7 +132,6 @@
 			color: rgba($white, 0.5);
 			cursor: pointer;
 			transition: all 0.3s linear;
-
 			&:hover {
 				color: rgba($white, 1);
 			}
@@ -162,7 +146,6 @@
 			cursor: pointer;
 			fill: rgba($white, 0.5);
 			transition: all 0.3s linear;
-
 			&:hover {
 				fill: rgba($white, 1);
 				transform: scale(1.1);
